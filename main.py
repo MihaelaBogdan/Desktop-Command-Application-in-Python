@@ -7,11 +7,11 @@ import urllib.parse
 import os
 import subprocess
 
-# Define global variables
-preferences = {}
-limba = "romana"  # Default language
 
-# Text for buttons in different languages
+preferences = {}
+limba = "romana"  
+
+
 texte_butoane = {
     "romana": {"process_text": "Procesează Text", "voice_command": "Comandă Vocală"},
     "engleza": {"process_text": "Process Text", "voice_command": "Voice Command"},
@@ -22,7 +22,7 @@ texte_butoane = {
     "japoneza": {"process_text": "テキスト処理", "voice_command": "音声コマンド"}
 }
 
-# Define dictionary with application names and paths
+# 
 applications = {
     "notepad": "C:\\Windows\\System32\\notepad.exe",
     "calculator": "C:\\Windows\\System32\\calc.exe",
@@ -37,7 +37,7 @@ applications = {
     "settings": "ms-settings:"
 }
 
-# Define the main window
+
 root = tk.Tk()
 root.title("Main Application")
 root.geometry("600x400")
@@ -226,6 +226,6 @@ def load_preferences():
     }
 
 if __name__ == "__main__":
-    root.withdraw()  # Ascunde fereastra principală până când sunt completate toate inițializările
+    root.withdraw()  
     show_main_window()
     root.mainloop()
